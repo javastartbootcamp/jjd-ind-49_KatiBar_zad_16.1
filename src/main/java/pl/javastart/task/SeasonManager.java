@@ -25,10 +25,10 @@ public class SeasonManager {
 
     private void printOptions() {
         System.out.println("Podaj porę roku:");
-        System.out.println(Season.SPRING);
-        System.out.println(Season.SUMMER);
-        System.out.println(Season.AUTUMN);
-        System.out.println(Season.WINTER);
+        Season[] seasons = Season.values();
+        for (Season season : seasons) {
+            System.out.println(season);
+        }
     }
 
 }

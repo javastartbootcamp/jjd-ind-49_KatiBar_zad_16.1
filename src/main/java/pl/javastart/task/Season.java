@@ -25,7 +25,7 @@ public enum Season {
 
     public static Season changeStringToSeason(String season) {
         for (Season value : Season.values()) {
-            if (season.compareToIgnoreCase(value.plName) == 0) {
+            if (season.equalsIgnoreCase(value.plName)) {
                 return value;
             }
         }
